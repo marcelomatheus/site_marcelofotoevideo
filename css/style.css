@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    
+}
+
+
+nav#menu_principal{
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+    
+    
+}
+
+ul#lista_menu{
+    display: flex;
+    list-style: none;
+    
+}
+
+
+
+li.elemento_lista{
+    margin: 0 20px 0 20px;  
+}
+li.elemento_lista a{
+    color: white;
+    padding: 10px;
+}
+
+li.elemento_lista a:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+div.logo{
+    width: 300px;
+    color: white;
+    background-image: url("logo_marcelo.png");
+    background-repeat: no-repeat;
+    overflow:hidden;
+    background-size: 200px;
+    background-position: center;
+}
+
+
+/*@media all and (max-width:800px){
+
+}
+
+@media all and (max-width:600px){
+    
+}*/
+
+/*----Conteúdo----*/
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#container{
+    width: 100%;
+    color: white;
+}
+
+#slider_container{
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.slides{
+    width: 400%;
+    height: 600px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slides img{
+    width: 100%;
+}
+
+#navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 60px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left:0%;
+}
+#radio2:checked ~ .first{
+    margin-left:-25%;
+}
+#radio3:checked ~ .first{
+    margin-left:-50%;
+}
+#radio4:checked ~ .first{
+    margin-left:-75%;
+}
+
+#navigation-auto div{
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#navigation-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#navigation-auto div:not(:last-child){
+    margin-right: 60px;
+}
+
+#radio1:checked ~ #navigation-auto .auto-btn1{
+    background-color: white;
+}
+#radio2:checked ~ #navigation-auto .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ #navigation-auto .auto-btn3{
+    background-color: white;
+}
+#radio4:checked ~ #navigation-auto .auto-btn4{
+    background-color: white;
+}
+
+/*Container 2*/
+div#second-container{
+    width: 85%;
+    display: flex;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+div#second-container h1{
+   display: inline;
+   width: 100%;
+}
+
+
+div.card{
+    width: 80%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 20px 0;
+    display: flex;
+    
+}
+
+div.card ~ .second{
+    margin-left: 20%;
+}
+
+
+div.card img{
+    width: 20%;
+    border-radius: 20px;
+}
+
+
+div.card .text{
+    width: 100%;
+    color: black; 
+    display: block;
+    align-items: center;
+    margin: auto 20px;
+    text-align: justify;
+}
+
+
+/*Footer*/
+footer{
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    border-radius: 30px 30px 0 0;
+}
+footer div#container-footer{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+}
+
