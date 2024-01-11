@@ -228,8 +228,9 @@ div.card .text{
 footer{
     width: 100%;
     background-color: white;
-    height: 100px;
+    height: 150px;
     border-radius: 30px 30px 0 0;
+    
 }
 footer div#container-footer{
     display: flex;
@@ -239,4 +240,18 @@ footer div#container-footer{
     text-align: center;
     padding-top: 30px;
 }
+footer div#container-footer ul#links{
+    width: 20%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+ ul#links li{
+    width: 100%;
+}
 
+
+a.links img{
+    width: 40%;
+}
